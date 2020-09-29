@@ -1,21 +1,24 @@
-	/*Start Body*/
-*
+body
 {
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
 	font-family: 'Karla', sans-serif;
-	
-
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: 60px 1000px;
+	grid-gap: 3px 5px;
+	grid-auto-rows: minmax(100px, auto);
+	justify-content: center;
 }
-	/*End Body*/
 
 
 	/*Start Header*/
 header
 {
 	height: 60px;
-	background-color: #121113
+	background-color: #121113;
+	grid-column: 1/4
 }
 header #JS_logo
 {
@@ -31,8 +34,8 @@ header #JS_logo
 header ul
 {
 	position: absolute;
-	top: 10px;
-	right:100px
+	top: -5px;
+	right:400px
 }
 header ul li 
 {
@@ -61,14 +64,6 @@ header ul li a:hover::after
 	transition-property: all;
 	width: 100%
 }
-#img
-{
-	width: 20px;
-	height: auto;
-	position: absolute;
-	top: 10px;
-	left: 80px;	
-}
 .A1
 {
 	position: absolute;
@@ -87,23 +82,48 @@ header ul li a:hover::after
 	font-family: 'Cinzel', serif;
 	color: #ddd
 }
+
+svg
+{
+	position: absolute;
+	left: 74em;
+	top: 5px
+}
+.search
+{
+	position: relative;
+	padding: 10px;
+	padding-left: 33px;
+	left: 58em;
+	height: 30px;
+	border: 1px solid white;
+	border-radius: 5px;
+	outline: none;
+	font-family: 'Roboto', sans-serif;
+}
+.search_icon
+{
+	position: absolute;
+	top: 2.2%;
+	left: 76.7%
+}
 	/*End Header*/
 
 
 	/*Start Aside*/
 
-aside
+.Aside1
 {
-	width: 200px;
-	height: 51em;
+	grid-row: 2/auto;
 	border: 2px solid #eee;
 	background-color: #fff;
-	border: 2px double rgba(25,24,24, 0.2)
+	border: 2px double rgba(25,24,24, 0.2);
+	
 }
 class
 {
 	position: relative;
-	top: 25px;
+	top: 20px;
 	left: 20px;
 	font-size: 21px;
 	color: #3412c1;
@@ -113,6 +133,9 @@ aside h4
 {
 	font-size: 20px;
 	text-align: center;
+	position: relative;
+	left: 10px;
+	bottom: 35px;
 	color: #3412c1;
 	font-family: 'Karla', sans-serif;
 	font-family: 'Titillium Web', sans-serif;
@@ -120,8 +143,9 @@ aside h4
 aside ul
 {
 	position: relative;
-	left: 20px;
-	width: 100px;
+	left: -30px;
+	bottom: 40px;
+	list-style: none;
 }
 #ul li a
 {
@@ -129,14 +153,12 @@ aside ul
 	text-decoration: none;
 	font-size: 17px;
 	color: #000;
-
-	
 }
 #ul li a:hover
 {
 	color: blue;
 	font-weight: bold;
-	transform: translateX(20px);
+	transform: translateX(30px);
 	transition-duration: 0.5s;
 	transition-property: all;
 	display: block
@@ -144,6 +166,16 @@ aside ul
 #JS_logo:hover .A1
 {
 	color: yellow;
+	text-shadow:  0 0 5px rgb(255,224,27),
+      0 0 10px rgb(250,243,27),
+      0 0 10px rgb(250,243,27),
+      0 0 10px rgb(250,243,27),
+      0 0 10px rgb(250,243,27),
+      0 0 10px rgb(250,243,27),
+      0 0 10px rgb(250,243,27),
+      0 0 10px rgb(250,243,27),
+      0 0 10px rgb(250,243,27)
+
 }
 #JS_logo:hover .A2
 {
@@ -157,15 +189,19 @@ aside ul
 	/*End Aside*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+main
+{	
+	background-color: rgba(248, 248, 216, 0.67);
+	grid-row: 2/auto;
+}
+.Aside2
+{
+	background-color: #fff;
+	grid-row: 2/auto;
+	border: 1px solid #ccc
+}
+footer
+{
+	background-color: #444;
+	grid-column: 1/4
+}
