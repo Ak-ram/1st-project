@@ -1,0 +1,171 @@
+	/*Start Body*/
+*
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-family: 'Karla', sans-serif;
+	
+
+}
+	/*End Body*/
+
+
+	/*Start Header*/
+header
+{
+	height: 60px;
+	background-color: #121113
+}
+header #JS_logo
+{
+	color: yellow;
+	position: relative;
+	font-size: 40px;
+	left: 25px;
+	top: 5px;
+	text-decoration: none;
+	font-family: 'Cinzel', serif;
+	font-family: 'Philosopher', sans-serif;
+}
+header ul
+{
+	position: absolute;
+	top: 10px;
+	right:100px
+}
+header ul li 
+{
+	display: inline;
+	padding: 10px;
+	font-size: 16px;
+	float: right;
+}
+header ul li a 
+{
+		color: white;
+		text-decoration: none;
+}
+header ul li a::after 
+{
+	content: "";
+	display: block;
+	height: 2px;
+	width: 0px;
+	background-color: #ffff27;
+	margin-top: 3px
+}
+header ul li a:hover::after
+{
+	transition-duration: 1s;
+	transition-property: all;
+	width: 100%
+}
+#img
+{
+	width: 20px;
+	height: auto;
+	position: absolute;
+	top: 10px;
+	left: 80px;	
+}
+.A1
+{
+	position: absolute;
+	top: -7px;
+	margin-left: 9px;
+	font-size: 50px;
+	font-family: 'Cinzel', serif;
+	color: #ddd
+}
+.A2
+{
+	position: absolute;
+	top: -15px;
+	left: 80px;
+	font-size: 55px;
+	font-family: 'Cinzel', serif;
+	color: #ddd
+}
+	/*End Header*/
+
+
+	/*Start Aside*/
+
+aside
+{
+	width: 200px;
+	height: 51em;
+	border: 2px solid #eee;
+	background-color: #fff;
+	border: 2px double rgba(25,24,24, 0.2)
+}
+class
+{
+	position: relative;
+	top: 25px;
+	left: 20px;
+	font-size: 21px;
+	color: #3412c1;
+
+}
+aside h4
+{
+	font-size: 20px;
+	text-align: center;
+	color: #3412c1;
+	font-family: 'Karla', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+}
+aside ul
+{
+	position: relative;
+	left: 20px;
+	width: 100px;
+}
+#ul li a
+{
+	line-height: 3em;
+	text-decoration: none;
+	font-size: 17px;
+	color: #000;
+
+	
+}
+#ul li a:hover
+{
+	color: blue;
+	font-weight: bold;
+	transform: translateX(20px);
+	transition-duration: 0.5s;
+	transition-property: all;
+	display: block
+}
+#JS_logo:hover .A1
+{
+	color: yellow;
+}
+#JS_logo:hover .A2
+{
+	color: yellow;
+}
+#JS_logo:hover
+{
+	color: white;
+}
+
+	/*End Aside*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
