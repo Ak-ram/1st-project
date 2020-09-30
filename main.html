@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>Main Page</title>
+	<title>JS Hub</title>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="main.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" 
@@ -24,9 +24,9 @@
 			<li><a href="#">Vanila Js</a></li>
 			<li><a href="#">Start with Us</a></li>
 		</ul>
-		<input type="search" placeholder="Search" class="search" name = "search"/>
+		<input type="search" placeholder="Search" class="search_input" name = "search"/>
 		
-<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="50" height="50"viewBox="0 0 172 172"style=" fill:#000000;">
+<svg class = "user_icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="50" height="50"viewBox="0 0 172 172"style=" fill:#000000;">
 <g transform=""><g fill="none" fill-rule="nonzero" 
 stroke="none" stroke-width="1" stroke-linecap="butt" 
 stroke-linejoin="miter" stroke-miterlimit="10" 
@@ -34,8 +34,8 @@ stroke-dasharray="" stroke-dashoffset="0"
 font-family="none" font-weight="none" 
 font-size="none" text-anchor="none" 
 style="mix-blend-mode: normal">
-<path d="M0,172v-172h172v172z" fill="#000000"></path>
-<g fill="#ffffff"><path d="M86,11.47786c-24.3208,0 -34.4,15.6004 -34.4,34.4c0,6.3296 3.02344,
+<path class = "bacground_icon_color" d="M0,172v-172h172v172z" fill="#121113"></path>
+<g class = "background_user_icon_color" fill="#888"><path d="M86,11.47786c-24.3208,0 -34.4,15.6004 -34.4,34.4c0,6.3296 3.02344,
 	
 12.68724 3.02344,12.68724c-1.21547,0.69947 -3.21443,2.91979 -2.7099,6.86432c0.94027,
 	
@@ -66,11 +66,8 @@ style="mix-blend-mode: normal">
 -5.73333z"></path>
 </g><path d="" fill="none"></path></g></g></svg>
 
-<img class = "search_icon" src="https://img.icons8.com/material-sharp/24/000000/search.png"/>
+<img id = "search_icon" src="https://img.icons8.com/material-sharp/24/000000/search.png"/>
 	</header>  <!-- End header-->
-	
-	
-	
 	
 <!-- Start  Aside --> <aside class="Aside1">
 		<div>
@@ -90,8 +87,105 @@ style="mix-blend-mode: normal">
 		</div>
 	</aside>    <!-- End  Aside -->
 	
-	
-	 <main></main>
+	 <main>
+	 	<section>
+	 	<h1>Introduction to JavaScript</h1>
+	 	<p>
+	 		JavaScript is a 
+	 		<ol>
+	 			<li> Lightweight language.</li>
+	 			<li> Cross-platform language.</li>
+	 			<li> Interpreted programming (scripting) language.</li>
+	 			<li> Case sensitive langauge.</li>
+	 			<li> Uses Unicode character set.</li>
+	 		</ol>
+<b style="color: blue">JavaScript</b>
+ was initially created to “make web pages alive”, as it was used as a Client-side developments, 
+ but letter it evaluated to be used in Server-side developments (Node.js and other frameworks) 
+ and also many non-browser environments like: gaming and applications. JavaScript contains a 
+ standard library of objects, like Array, Date, and Math, and a core set of language elements like 
+ operators, control structures, and control statements so it’s considered an objected or prototype 
+ based programming language.
+Anciently we are write “Vanilla JS” or “Row JS” or “Native JS” codes which means we was written 
+pure JS codes without any libraries or platforms. 
+JavaScript is a “Just-in-time (JIT) “OR “Dynamic translation” OR “run-time compilations” OR “interpreted” 
+that means no compiler needed in JS because the host environment translate (compile) JS codes at run t
+ime (during) execution of the codes no before it.
+JavaScript is a “dynamically typed” language which means you can change data type of variables 
+several times without need to repeat variable keyword (in other words there are existing data types, 
+but variables are not bound to any of them).
+Doing mathematical operators are “safe” in JavaScript. We can do anything: divide by zero, 
+treat non-numeric strings as numbers; etc. The script will never stop with a fatal error (“die”). 
+At worst, we’ll get NaN as the result.
+JavaScript is designed to run as a scripting language in a host environment, the most common 
+host environment is the browser.
+Today, JavaScript has a unique position as the most widely-adopted browser language with 
+ 	full integration with HTML/CSS.
+	 	</p>
+	 	</section>
+	 	<section>
+	 		<h2>History of JavaScript</h2>
+	 		<p>
+				JavaScript was created in 1995 by <q style = "font-weight: bold">Brendan Eich</q> while he was an engineer at Netscape. </br>
+<img class = "Eich" src="OIP.jpg"/></br>
+JS was initially called “LiveScript”, but it was later renamed to JavaScript. Unlike most other languages,
+ JavaScript has no concept of input #&amp; output.
+</p>
+	 	</section>
+	 	<section>
+	 		<h2>JS Engine</h2>
+	 		<p>
+JavaScript engine is a computer program that executes JavaScript (JS) code. So any device has JS engine program can run JavaScript codes on it.
+The browser has this program inside it (as built-in) and it sometimes called a “JavaScript virtual machine”.
+As browser has many types also JavaScript virtual machine (JS engine) has many types called “codename”, for instance:
+				<br> <b style = "color: red">Note: </b>JavaScript virtual machine === JS engine === codename.
+				
+				
+		<table border= 1px >
+				<thead>
+				  <tr>
+					<th>Browser Type</th>
+					<th>Codename</th>
+				  </tr>
+				</thead>
+				<tbody>
+						<tr>
+								<td>Firefox</td>
+								<td>SpiderMonkey</td>
+						</tr>
+						<tr>
+								<td>Chrome</td>
+								<td>V8</td>
+						</tr>
+						<tr>
+								<td>Opera</td>
+								<td>V8</td>
+						</tr>
+						<tr>
+								<td>IE</td>
+								<td>Chakra</td>
+						</tr>
+						<tr>
+								<td>Microsoft Edge</td>
+								<td>ChakraCore</td>
+						</tr>
+						<tr>
+								<td>Safari</td>
+								<td>Nitro &amp; SquirrelFish</td>
+						</tr>
+				</tbody>	
+</table>
+So if we have a feature called “X” and this feature is supported by “V8”, then it probably works in Chrome and Opera.
+			<h3 style="color: red">How do engines work?</h3>
+			<ol>
+					<li>The engine reads (“parses”) the script codes line by line from top to down and from the most inner to the most outer.</li>
+					<li>Then it converts (“compiles”) the script to the machine language (0, 1).</li>
+					<li>And then the machine (computer) runs this code fast.</li>
+			</ol>
+</p>
+	 	</section>
+	 </main>
 	 <aside class="Aside2"></aside>
-	 <footer></footer>
+	
+	<script src="test.js"></script>
 </body>

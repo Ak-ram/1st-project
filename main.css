@@ -6,12 +6,11 @@ body
 	font-family: 'Karla', sans-serif;
 	display: grid;
 	grid-template-columns: 1fr 5fr 1fr;
-	grid-template-rows: 60px 1000px;
+	grid-template-rows: 60px 2000px;
 	grid-gap: 3px 5px;
 	grid-auto-rows: minmax(100px, auto);
 	justify-content: center;
 }
-
 
 	/*Start Header*/
 header
@@ -82,31 +81,52 @@ header ul li a:hover::after
 	font-family: 'Cinzel', serif;
 	color: #ddd
 }
-
-svg
+.user_icon
 {
 	position: absolute;
 	left: 74em;
-	top: 5px
+	top: 5px;
 }
-.search
+/*
+.user_icon .bacground_icon_color:hover
 {
+	fill: red;
+}
+*/
+.user_icon .background_user_icon_color:hover
+{
+	fill: yellow;
+
+}
+.search_input
+{
+	width: 13em;
 	position: relative;
-	padding: 10px;
+	padding: 0px;
 	padding-left: 33px;
-	left: 58em;
+	left: 59em;
 	height: 30px;
 	border: 1px solid white;
 	border-radius: 5px;
 	outline: none;
 	font-family: 'Roboto', sans-serif;
 }
-.search_icon
+/*
+.search_input:hover
+{
+	width: 13em;
+	transition: all 0.7s cubic-bezier(0.2, 0.2, 0.2, 0.2)
+
+}
+*/
+#search_icon
 {
 	position: absolute;
 	top: 2.2%;
-	left: 76.7%
+	left: 78%;
+
 }
+
 	/*End Header*/
 
 
@@ -115,9 +135,9 @@ svg
 .Aside1
 {
 	grid-row: 2/auto;
-	border: 2px solid #eee;
 	background-color: #fff;
 	border: 2px double rgba(25,24,24, 0.2);
+	border-bottom: hidden;
 	
 }
 class
@@ -188,12 +208,74 @@ aside ul
 
 	/*End Aside*/
 
-
+	/*Start main*/
 main
 {	
+	
 	background-color: rgba(248, 248, 216, 0.67);
 	grid-row: 2/auto;
 }
+.Eich
+{
+	width: 170px;
+	height: 200px;
+	position: relative;
+	left: 35%;
+	margin: 10px
+}
+table
+{
+	position: relative;
+	left: 17%;
+	border: 1px solid #afafaaf;
+	border-collapse: collapse;
+	margin-bottom: 10px
+}
+table thead tr:nth-child(1)
+{
+	background-color: rgba(234, 230, 230, 0.61)
+}
+table tbody tr:nth-child(1)
+{
+	background-color: #e7eaae
+}
+table tbody tr:nth-child(3)
+{
+	background-color: #e7eaae
+}
+table tbody tr:nth-child(5)
+{
+	background-color: #e7eaae
+}
+tr:hover
+{
+	background-color: rgba(220, 220, 220, 0.61);
+}
+th
+{
+	width: 300px;
+	height: 30px;
+	color: #f00
+}
+td
+{
+	text-align: center;
+	font-weight: bold;
+	height: 25px
+}
+
+	/*End main*/
+
+
+
+
+
+
+
+
+
+
+
 .Aside2
 {
 	background-color: #fff;
